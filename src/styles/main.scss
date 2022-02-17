@@ -5,3 +5,182 @@
 body {
   background: $c-gray;
 }
+
+$pink: #d31b83;
+$dark-blue: #352063;
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+.page {
+  // max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/baAAck.png);
+  background-repeat: repeat-x;
+  background-position: center;
+
+  &__container {
+    width: 900px;
+    background-color: $pink;
+  }
+
+  &__info {
+    width: 800px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: $dark-blue;
+    opacity: 0.6;
+    margin: 14px 0 0;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  box-sizing: border-box;
+  padding-top: 30px;
+  height: 656px;
+
+  &__logo {
+    width: max-content;
+    z-index: 1;
+  }
+
+  &__poster {
+    position: absolute;
+    top: 55px;
+  }
+
+  &__poster-lines {
+    position: absolute;
+    top: 134px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 26px;
+
+  &__cross {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+  }
+
+  &__title {
+    margin: 40px 0 28px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__text {
+    width: 728px;
+    align-items: center;
+    margin-bottom: 35px;
+
+    &-info {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #fff;
+
+      margin: 0;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 280px;
+    background: $dark-blue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__slider {
+    margin: 40px 0 21px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #fff;
+    }
+  }
+
+  &__download {
+    position: relative;
+
+    &-android {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      width: 134px;
+      height: 40px;
+      border-radius: 4px;
+      top: 330px;
+      left: 28px;
+    }
+
+    &-apple {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      width: 134px;
+      height: 40px;
+      border-radius: 4px;
+      top: 330px;
+      left: 182px;
+    }
+  }
+}
+
+.footer {
+  &__contacts {
+    height: 105px;
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    &-container {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+  }
+}
